@@ -37,3 +37,40 @@
 		content: "";
 	}
 }
+
+.neon-logo {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	align-items: center;
+	font-weight: 300;
+	font-family: var(--font-secondary);
+	text-decoration: none;
+
+	&__img {
+		filter: drop-shadow(0 0 40px var(--primary));
+
+		@include xs {
+			width: 150px;
+			height: auto;
+		}
+	}
+
+	&__label {
+		font-size: 40px;
+		text-transform: uppercase;
+
+		@include xs {
+			font-size: 30px;
+		}
+	}
+
+	&__text {
+		font-size: 30px;
+		animation: flicker 1.5s infinite alternate; //from animation.scss
+
+		@include xs {
+			font-size: 20px;
+		}
+	}
+}

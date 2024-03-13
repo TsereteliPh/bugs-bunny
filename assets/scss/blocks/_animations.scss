@@ -48,3 +48,30 @@
 		}
 	}
 }
+
+@keyframes flicker {
+
+	0%,
+	18%,
+	22%,
+	25%,
+	53%,
+	57%,
+	100% {
+		text-shadow:
+			0 0 7px var(--fc-light),
+			0 0 10px var(--fc-light),
+			0 0 20px var(--fc-light),
+			0 0 30px var(--primary),
+			0 0 50px var(--primary),
+			0 0 80px var(--primary),
+			0 0 100px var(--primary),
+			0 0 120px var(--primary);
+	}
+
+	20%,
+	24%,
+	55% {
+		text-shadow: none;
+	}
+}
