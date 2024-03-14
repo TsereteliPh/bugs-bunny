@@ -1,0 +1,89 @@
+.info-cards {
+	padding: 40px 0 60px;
+	background: url(assets/images/info-cards-bg.png) no-repeat 50% / cover;
+
+	&__list {
+		display: grid;
+		grid-template-rows: 3fr 2fr;
+		grid-template-columns: 2fr 3fr;
+		gap: 20px 30px;
+		max-width: 1150px;
+		min-height: 670px;
+		margin: 0 auto;
+
+		@include hg {
+			grid-template-rows: 1fr 1fr;
+			min-height: 500px;
+		}
+
+		@include sm {
+			grid-template-columns: 3fr 4fr;
+			gap: 15px;
+		}
+
+		@include xs {
+			display: flex;
+			flex-direction: column;
+			min-height: auto;
+		}
+	}
+
+	&__item {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		justify-content: flex-end;
+		width: 100%;
+		padding: 50px 30px;
+		background: var(--bg-primary) no-repeat 50% / cover;
+
+		@include sm {
+			padding: 40px 20px;
+		}
+
+		@include xs {
+			min-height: 250px;
+		}
+
+		&::before {
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 0;
+			width: 100%;
+			height: 100%;
+			background: linear-gradient(130deg, #000 0%, rgba(#000, 0.9) 10%, rgba(#000, 0) 100%);
+			content: "";
+		}
+
+		&:first-child {
+			grid-row: 1/3;
+		}
+	}
+
+	&__label,
+	&__text {
+		position: relative;
+		z-index: var(--ui-index-1);
+	}
+
+	&__label {
+		font-size: 20px;
+		text-transform: uppercase;
+
+		@include lg {
+			font-size: 18px;
+		}
+	}
+
+	&__text {
+		width: 100%;
+		max-width: 330px;
+		color: #dad679;
+
+		@include lg {
+			font-size: 14px;
+		}
+	}
+}
