@@ -1,0 +1,135 @@
+.rent {
+	padding: 40px 0;
+	overflow: hidden;
+
+	&__container {
+
+		&::after {
+			position: absolute;
+			top: 50%;
+			right: -170px;
+			width: auto;
+			height: 100%;
+			max-height: 680px;
+			aspect-ratio: 1/1;
+			background: url(assets/images/neon-cocktail.png) no-repeat 50% / contain;
+			transform: translateY(-50%);
+			content: "";
+
+			@include md {
+				top: -40px;
+				right: 0;
+				height: 150px;
+				transform: none;
+			}
+
+			@include xs {
+				right: -50px;
+			}
+		}
+	}
+
+	&__content {
+		max-width: 1000px;
+		padding: 10px 60px 35px;
+
+		@include hg {
+			max-width: 75%;
+		}
+
+		@include md {
+			max-width: none;
+			padding: 20px 40px 40px;
+		}
+
+		@include xs {
+			padding: 15px 20px 30px;
+		}
+	}
+
+	&__title {
+		font-size: 36px;
+		line-height: 1.3;
+
+		@include hg {
+			font-size: 28px;
+		}
+
+		@include md {
+			padding-right: 100px;
+		}
+
+		@include sm {
+			font-size: 24px;
+		}
+
+		@include xs {
+			padding-right: 40px;
+			font-size: 20px;
+		}
+	}
+
+	&__list {
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+		margin-top: 30px;
+	}
+
+	&__item {
+		position: relative;
+		padding-left: 65px;
+		font-size: 20px;
+		line-height: 1.3;
+
+		@include hg {
+			padding-left: 40px;
+			font-size: 18px;
+		}
+
+		@include sm {
+			font-size: 14px;
+		}
+
+		@include xs {
+			padding-left: 25px;
+		}
+
+		&::before {
+			position: absolute;
+			top: 5px;
+			left: 10px;
+			width: 17px;
+			height: auto;
+			aspect-ratio: 1/1;
+			border: 1px solid #fff;
+			border-radius: 50%;
+			box-shadow:
+				inset 0 0 5px var(--primary),
+				0 0 10px 8px rgba(#8300c1, 0.2);
+			content: "";
+
+			@include hg {
+				left: 0;
+				width: 15px;
+			}
+
+			@include sm {
+				top: 2px;
+			}
+
+			@include xs {
+				top: 5px;
+				width: 10px;
+			}
+		}
+	}
+
+	&__button {
+		margin: 50px auto 0;
+
+		@include xs {
+			margin: 30px auto 0;
+		}
+	}
+}
