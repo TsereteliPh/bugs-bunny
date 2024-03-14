@@ -80,7 +80,7 @@
 	&__text {
 		width: 100%;
 		max-width: 330px;
-		color: #dad679;
+		color: var(--tertiary);
 
 		@include lg {
 			font-size: 14px;
