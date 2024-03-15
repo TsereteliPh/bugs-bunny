@@ -1,0 +1,62 @@
+.varieties {
+	padding: 120px 0;
+
+	@include hg {
+		padding: 80px 0;
+	}
+
+	@include sm {
+		padding: 50px 0;
+	}
+
+	&__title {
+		margin-bottom: 40px;
+		font-size: clamp(1.25rem, 1rem + 1.111vw, 2rem);
+
+		@include md {
+			text-align: center;
+		}
+
+		@include sm {
+			margin-bottom: 20px;
+		}
+	}
+
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 15px 5px;
+		justify-content: center;
+	}
+
+	&__item {
+		display: flex;
+		flex: 1 0 240px;
+		flex-direction: column;
+		gap: 10px;
+		align-items: center;
+		width: 100%;
+		max-width: 300px;
+
+		@include xs {
+			flex-basis: 150px;
+			max-width: 220px;
+		}
+	}
+
+	&__img {
+		width: 100%;
+		height: auto;
+		aspect-ratio: 3/2;
+		object-fit: cover;
+	}
+
+	&__label {
+		color: var(--tertiary);
+		text-align: center;
+
+		@include xs {
+			font-size: 14px;
+		}
+	}
+}
