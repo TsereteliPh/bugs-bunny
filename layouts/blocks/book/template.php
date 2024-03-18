@@ -27,7 +27,7 @@
 			<div class="neon-logo__text neon-text">lounge</div>
 		</a>
 
-		<form id="book" method="POST" class="book__form" name="Бронь">
+		<form id="book-form" method="POST" class="book__form" name="Бронь">
 			<div class="book__form-legend">Забронировать</div>
 
 			<input type="text" class="input book__input" name="client_name" placeholder="Имя" required>

@@ -1,12 +1,12 @@
 .varieties {
-	padding: 120px 0;
+	margin: 120px 0 60px;
 
 	@include hg {
-		padding: 80px 0;
+		margin: 80px 0;
 	}
 
 	@include sm {
-		padding: 50px 0;
+		margin: 50px 0;
 	}
 
 	&__title {

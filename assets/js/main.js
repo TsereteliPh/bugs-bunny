@@ -91,6 +91,7 @@ function sendForm() {
 		form.addEventListener("submit", function (e) {
 			e.preventDefault();
 			const form = this;
+			this.classList.add("loader");
 			let formData = new FormData(form);
 			const formName = form.name;
 			const fileInput = form.querySelector("input[type=file]");
@@ -115,6 +116,7 @@ function sendForm() {
 			})
 				.then((response) => response.text())
 				.then((data) => {
+					this.classList.remove('loader');
 					Fancybox.close(true);
 					form.reset();
 					setTimeout(function () {
@@ -319,3 +321,24 @@ document.addEventListener("DOMContentLoaded", function(e) {
 		})
 	}
 })
+
+//Функционал кнопок брони
+
+const bookBtns = document.querySelectorAll('.js-book');
+
+if (bookBtns) {
+	bookBtns.forEach(btn => {
+		const bookForm = document.querySelector('#book-form');
+
+		if (bookForm) {
+			btn.addEventListener('click', () => {
+				bookForm.scrollIntoView({
+					behavior: 'smooth',
+					block: 'center'
+				});
+			});
+		} else {
+			btn.style.display = 'none';
+		}
+	});
+}

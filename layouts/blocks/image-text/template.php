@@ -20,7 +20,7 @@
 
 			<div class="image-text__text"><?php echo $text; ?></div>
 
-			<button class="btn image-text__button" type="button">Забронировать</button>
+			<button class="btn image-text__button js-book" type="button">Забронировать</button>
 		</div>
 
 		<?php

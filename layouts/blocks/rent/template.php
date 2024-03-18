@@ -19,7 +19,7 @@
 				endif;
 			?>
 
-			<button class="btn rent__button" type="button">Арендовать</button>
+			<button class="btn rent__button js-book" type="button">Арендовать</button>
 		</div>
 	</div>
 </section>

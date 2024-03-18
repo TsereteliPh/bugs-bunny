@@ -119,8 +119,8 @@ function mail_meta_box_function( $post ) {
 add_action( "wp_ajax_send_mail", "send_mail" );
 add_action( "wp_ajax_nopriv_send_mail", "send_mail" );
 function send_mail() {
-	if ( empty ($_POST['form_name'] ) || empty( $_POST['page_request'] ) ) exit;
-	if ( $_POST['form_name'] == 'Расчет' && ! wp_verify_nonce( $_POST['callback_input'], $_POST['form_name'] ) ) exit;
+	if ( empty ( $_POST['form_name'] ) || empty( $_POST['page_request'] ) ) exit;
+	if ( $_POST['form_name'] == 'Бронь' && ! wp_verify_nonce( $_POST['book-form-nonce'], $_POST['form_name'] ) ) exit;
 
 	$form_name = $_POST['form_name'];
 	$mail = '';
