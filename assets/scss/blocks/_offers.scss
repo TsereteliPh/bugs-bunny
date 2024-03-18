@@ -1,0 +1,86 @@
+.offers {
+	margin: 150px 0 80px;
+
+	&__title {
+		margin-bottom: 60px;
+		font-size: clamp(1.125rem, 0.958rem + 0.741vw, 1.625rem);
+
+		@include xs {
+			text-align: center;
+		}
+
+		span {
+			color: var(--primary);
+			text-transform: uppercase;
+		}
+	}
+
+	&__list {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 80px 40px;
+
+		@include md {
+			grid-template-columns: 1fr 1fr;
+		}
+
+		@include sm {
+			gap: 60px 30px;
+		}
+
+		@include xs {
+			grid-template-columns: 1fr;
+		}
+	}
+
+	&__item {
+		display: flex;
+		flex-direction: column;
+		gap: 60px;
+		min-height: 360px;
+		padding: 25px 20px 160px;
+		overflow: visible;
+
+		@include hg {
+			gap: 40px;
+		}
+
+		@include xs {
+			gap: 20px;
+			max-width: 380px;
+			margin: 0 auto;
+		}
+	}
+
+	&__text {
+		color: var(--primary);
+		font-size: 26px;
+		text-align: center;
+		text-transform: uppercase;
+
+		@include lg {
+			font-size: 22px;
+		}
+	}
+
+	&__desc {
+		@include xs {
+			text-align: center;
+		}
+	}
+
+	&__img {
+		position: absolute;
+		bottom: -100px;
+		left: 50%;
+		width: 65%;
+		max-height: 250px;
+		object-fit: contain;
+		transform: translateX(-50%);
+
+		@include lg {
+			bottom: -50px;
+			max-height: 200px;
+		}
+	}
+}
