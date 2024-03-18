@@ -40,3 +40,28 @@
 		}
 	}
 }
+
+.btn-fill {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	min-height: 40px;
+	padding: 10px 50px;
+	color: var(--fc-light);
+	font-size: 14px;
+	background: var(--secondary);
+	border: 1px solid var(--primary);
+	transition: var(--transition);
+
+	@include mouse {
+
+		&:hover {
+			background: var(--primary);
+		}
+
+		&:active {
+			opacity: 0.8;
+		}
+	}
+}

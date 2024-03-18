@@ -1,0 +1,13 @@
+.input {
+	width: 100%;
+	min-height: 40px;
+	padding: 10px 15px;
+	color: var(--fc-light);
+	font-size: 14px;
+	background: none;
+	border: 1px solid var(--fc-light);
+
+	&::placeholder {
+		color: var(--fc-light);
+	}
+}
