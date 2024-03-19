@@ -1,7 +1,6 @@
 .footer {
 	position: relative;
 	padding-top: 240px;
-	background: url(assets/images/sparks-bg.png) no-repeat 50% / 100% auto;
 
 	@include hg {
 		padding-top: 80px;
@@ -13,28 +12,6 @@
 	}
 
 	&::before {
-		position: absolute;
-		top: -250px;
-		right: 0;
-		width: 480px;
-		height: 900px;
-		background: url(assets/images/footer-smoke-bg.png) no-repeat 50% / contain;
-		opacity: 0.3;
-		content: "";
-
-		@include hg {
-			top: auto;
-			bottom: 0;
-			width: 330px;
-			height: 620px;
-		}
-
-		@include xs {
-			display: none;
-		}
-	}
-
-	&::after {
 		position: absolute;
 		top: 30px;
 		left: calc(50% - 620px);
@@ -79,26 +56,6 @@
 			flex-direction: column;
 			align-items: center;
 			min-height: auto;
-		}
-
-		&::before {
-			position: absolute;
-			top: 270px;
-			right: 0;
-			width: 140px;
-			height: 140px;
-			background: url(assets/images/coal-bg-1.png) no-repeat 50% / contain;
-			transform: rotate(125deg);
-			content: "";
-
-			@include hg {
-				width: 90px;
-				height: 90px;
-			}
-
-			@include xs {
-				display: none;
-			}
 		}
 	}
 

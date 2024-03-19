@@ -23,6 +23,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
+	background: url(assets/images/body-bg.jpg) repeat-y 50% bottom / auto;
 }
 
 *:focus {
