@@ -2,7 +2,7 @@
 	$varieties = get_sub_field( 'varieties' );
 	if ( $varieties ) :
 		?>
-			<section class="varieties">
+			<section id="varieties" class="varieties">
 				<div class="container varieties__container">
 					<?php if ( get_sub_field( 'title' ) ) : ?>
 						<h2 class="varieties__title"><?php the_sub_field( 'title' ); ?></h2>

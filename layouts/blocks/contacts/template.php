@@ -5,7 +5,7 @@
 	$opening_hours = get_field( 'opening_hours', 'options' );
 	$map = get_field( 'map', 'options' );
 ?>
-<section class="contacts">
+<section id="contacts" class="contacts">
 	<div class="container contacts__container">
 		<div class="contacts__content">
 			<div class="contacts__info">

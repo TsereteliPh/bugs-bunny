@@ -2,7 +2,7 @@
 	$title = get_sub_field( 'title' );
 	$offers = get_sub_field( 'offers' );
 ?>
-<section class="offers">
+<section id="offers" class="offers">
 	<div class="container">
 		<?php if ( $title ) : ?>
 			<h2 class="offers__title">

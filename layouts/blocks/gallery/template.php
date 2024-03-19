@@ -1,4 +1,4 @@
-<section class="gallery">
+<section id="gallery" class="gallery">
 	<?php
 		$title = get_sub_field( 'title' );
 		if ( $title ) :

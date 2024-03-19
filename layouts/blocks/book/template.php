@@ -1,4 +1,4 @@
-<section class="book">
+<section id="book" class="book">
 	<div class="container book__container">
 		<div class="book__content">
 			<?php

@@ -2,7 +2,7 @@
 	$cards = get_sub_field( 'cards' );
 	if ( $cards ) :
 		?>
-			<section class="info-cards">
+			<section id="info-cards" class="info-cards">
 				<div class="container">
 					<ul class="reset-list info-cards__list">
 						<?php foreach ( $cards as $card ) : ?>

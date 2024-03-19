@@ -11,7 +11,7 @@
 		$content_class .= ' image-text__content--no-image';
 	}
 ?>
-<section class="image-text">
+<section id="image-text" class="image-text">
 	<div class="container image-text__container">
 		<div class="<?php echo $content_class; ?>">
 			<?php if ( $title ) : ?>

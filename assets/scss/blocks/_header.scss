@@ -72,43 +72,46 @@
 			overflow: hidden;
 			transition: var(--transition);
 		}
-	}
 
-	&__menu-item {
-		display: block;
-		font-size: 24px;
-		text-decoration: none;
-		transition: var(--transition);
+		.menu-item {
+			display: block;
+			font-size: 24px;
+			transition: var(--transition);
 
-		@include hg {
-			font-size: 20px;
-		}
-
-		@include lg {
-			font-size: 18px;
-		}
-
-		@include mouse {
-
-			&:hover {
-				color: #ae5dfe;
+			@include hg {
+				font-size: 20px;
 			}
-		}
 
-		&.active {
-			position: relative;
-			color: #ae5dfe;
+			@include lg {
+				font-size: 18px;
+			}
 
-			&::before {
-				position: absolute;
-				top: 0;
-				left: 0;
-				width: 100%;
-				height: 100%;
-				background: rgba(#8000ff, 0.3);
-				border-radius: 50%;
-				filter: blur(15px);
-				content: "";
+			@include mouse {
+
+				&:hover {
+					color: #ae5dfe;
+				}
+			}
+
+			&.active {
+				position: relative;
+				color: #ae5dfe;
+
+				&::before {
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					background: rgba(#8000ff, 0.3);
+					border-radius: 50%;
+					filter: blur(15px);
+					content: "";
+				}
+			}
+
+			a {
+				text-decoration: none;
 			}
 		}
 	}

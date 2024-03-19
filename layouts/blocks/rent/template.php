@@ -1,4 +1,4 @@
-<section class="rent">
+<section id="rent" class="rent">
 	<div class="container rent__container">
 		<div class="glass rent__content">
 			<?php if ( get_sub_field( 'title' ) ) : ?>

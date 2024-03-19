@@ -294,9 +294,10 @@ if (clientsCarousel) {
 document.addEventListener("DOMContentLoaded", function(e) {
 	const header = document.querySelector('.header');
 
-	if (header && window.innerWidth <= 768) {
+	if (header) {
 		const headerBurger = header.querySelector('.header__burger');
 		const headerMenu = header.querySelector('.header__menu');
+		const headerLinks = header.querySelectorAll('a[href*="#"]');
 
 		const menuOpener = () => {
 			header.classList.add('active');
@@ -312,13 +313,29 @@ document.addEventListener("DOMContentLoaded", function(e) {
 			document.body.style.overflow = 'visible';
 		}
 
-		headerBurger.addEventListener('click', function() {
-			if (this.classList.contains('active')) {
-				menuCloser();
-			} else {
-				menuOpener();
-			}
-		})
+		headerLinks.forEach(link => {
+			link.addEventListener('click', function(evt) {
+				evt.preventDefault();
+
+				const blockID = link.getAttribute('href').substring(1);
+				document.getElementById(blockID).scrollIntoView({
+					behavior: 'smooth',
+					block: 'center'
+				})
+
+				if (window.innerWidth <= 768) menuCloser();
+			})
+		});
+
+		if (window.innerWidth <= 768) {
+			headerBurger.addEventListener('click', function() {
+				if (this.classList.contains('active')) {
+					menuCloser();
+				} else {
+					menuOpener();
+				}
+			})
+		}
 	}
 })
 
