@@ -15,14 +15,6 @@
 	<div class="container header__container">
 		<a href="<?php echo bloginfo( 'url' ); ?>" class="neon-text header__logo" arai-label="Вернуться на главную страницу">Bugs bunny</a>
 
-		<!-- <nav class="header__menu">
-			<a href="#" class="header__menu-item active">О нас</a>
-			<a href="#" class="header__menu-item">Заказ</a>
-			<a href="#" class="header__menu-item">Скидки</a>
-			<a href="#" class="header__menu-item">Меню</a>
-			<a href="#" class="header__menu-item">Контакты</a> -->
-		<!-- </nav> -->
-
 		<?php wp_nav_menu(array(
 			'theme_location' => 'menu_main',
 			'container' => '',

@@ -32,11 +32,11 @@
 
 			<input type="text" class="input book__input" name="client_name" placeholder="Имя" required>
 
-			<input type="email" class="input book__input" name="client_email" placeholder="email" required>
+			<input type="tel" class="input book__input" name="client_tel" placeholder="Телефон" required>
 
-			<input type="tel" class="input book__input" name="client_tel" placeholder="телефон" required>
+			<textarea class="input book__textarea" name="client_message" placeholder="Комментарий"></textarea>
 
-			<button class="btn-fill book__submit" type="submit">отправить</button>
+			<button class="btn-fill book__submit" type="submit">Отправить</button>
 
 			<input type="text" class="hidden" name="page_request" value="<?php echo is_archive() ? get_the_archive_title() : get_the_title(); ?>">
 

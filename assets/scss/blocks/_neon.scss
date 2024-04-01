@@ -1,29 +1,20 @@
 .neon-text {
 	position: relative;
-	color: var(--bg-primary);
+	color: transparent;
 	letter-spacing: 0;
 	-webkit-text-stroke: 1px var(--fc-light);
 	text-shadow:
 		0 0 7px var(--fc-light),
 		0 0 10px var(--fc-light),
-		0 0 20px var(--fc-light),
 		0 0 30px var(--primary),
-		0 0 50px var(--primary),
-		0 0 80px var(--primary),
-		0 0 100px var(--primary),
-		0 0 120px var(--primary);
-	animation: pulsate 0.15s ease-in-out infinite alternate; //from animation.scss
+		0 0 50px var(--primary);
 
 	@include sm {
 		text-shadow:
 			0 0 5px var(--fc-light),
 			0 0 8px var(--fc-light),
-			0 0 15px var(--fc-light),
 			0 0 20px var(--primary),
-			0 0 30px var(--primary),
-			0 0 50px var(--primary),
-			0 0 65px var(--primary),
-			0 0 80px var(--primary);
+			0 0 30px var(--primary);
 	}
 
 	&::before {
@@ -68,7 +59,6 @@
 
 	&__text {
 		font-size: 30px;
-		animation: flicker 1.5s infinite alternate; //from animation.scss
 
 		@include xs {
 			font-size: 20px;
