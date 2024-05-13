@@ -73,12 +73,11 @@
 		margin-bottom: 0;
 		font-weight: 400;
 		font-size: clamp(1.25rem, 0.917rem + 1.481vw, 2.25rem);
-		text-transform: uppercase;
 	}
 
 	&__text {
 		max-width: 720px;
-		font-size: 24px;
+		font-size: 18px;
 
 		@include hg {
 			max-width: 650px;

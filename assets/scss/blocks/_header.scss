@@ -75,12 +75,8 @@
 
 		.menu-item {
 			display: block;
-			font-size: 24px;
+			font-size: 20px;
 			transition: var(--transition);
-
-			@include hg {
-				font-size: 20px;
-			}
 
 			@include lg {
 				font-size: 18px;
@@ -123,11 +119,7 @@
 	}
 
 	&__info {
-		font-size: 20px;
-
-		@include hg {
-			font-size: 18px;
-		}
+		font-size: 18px;
 
 		@include lg {
 			font-size: 16px;
