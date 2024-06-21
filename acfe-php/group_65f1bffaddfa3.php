@@ -26,6 +26,27 @@ acf_add_local_field_group(array(
 			'acfe_field_group_condition' => 0,
 			'sub_fields' => array(
 				array(
+					'key' => 'field_6657114afd740',
+					'label' => 'Заголовок',
+					'name' => 'title',
+					'aria-label' => '',
+					'type' => 'text',
+					'instructions' => 'Добавляет заголовок h1',
+					'required' => 0,
+					'conditional_logic' => 0,
+					'wrapper' => array(
+						'width' => '',
+						'class' => '',
+						'id' => '',
+					),
+					'default_value' => '',
+					'maxlength' => '',
+					'placeholder' => '',
+					'prepend' => '',
+					'append' => '',
+					'acfe_field_group_condition' => 0,
+				),
+				array(
 					'key' => 'field_65f1bffb88482',
 					'label' => 'Текст',
 					'name' => 'text',
@@ -78,7 +99,7 @@ acf_add_local_field_group(array(
 	'acfe_display_title' => '',
 	'acfe_meta' => '',
 	'acfe_note' => '',
-	'modified' => 1710342257,
+	'modified' => 1716982177,
 ));
 
 endif;

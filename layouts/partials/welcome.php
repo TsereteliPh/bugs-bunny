@@ -13,6 +13,10 @@
 							<div class="neon-logo__text neon-text">lounge</div>
 						</a>
 
+						<?php if ( $welcome['title'] ) : ?>
+							<h1 class="welcome__title"><?php echo $welcome['title']; ?></h1>
+						<?php endif; ?>
+
 						<?php if ( $welcome['text'] ) : ?>
 							<div class="welcome__text"><?php echo $welcome['text']; ?></div>
 						<?php endif; ?>

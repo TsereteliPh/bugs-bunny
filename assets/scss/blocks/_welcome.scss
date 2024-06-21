@@ -14,7 +14,7 @@
 	&__content {
 		display: flex;
 		flex-direction: column;
-		gap: 45px;
+		gap: 30px;
 		align-items: center;
 		justify-content: center;
 		max-width: 480px;
@@ -27,6 +27,27 @@
 
 		@include xs {
 			max-width: none;
+		}
+	}
+
+	&__title {
+		align-self: flex-start;
+		margin-bottom: 0;
+		font-weight: 400;
+		font-size: 38px;
+		line-height: 1.2;
+
+		@include hg {
+			font-size: 32px;
+		}
+
+		@include sm {
+			font-size: 28px;
+		}
+
+		@include xs {
+			align-self: auto;
+			font-size: 24px;
 		}
 	}
 
