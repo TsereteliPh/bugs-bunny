@@ -256,35 +256,30 @@ try {
 
 //Swiper
 
-//Слайдер blocks/rest
+//Слайдер blocks/cocktail-slider
 
-const clientsCarousel = document.querySelector('.clients__container');
+const cocktailCarousel = document.querySelector('.cocktail-slider__slider');
 
-if (clientsCarousel) {
-	let clientsSwiper = new Swiper(clientsCarousel, {
+if (cocktailCarousel) {
+	let cocktailSwiper = new Swiper(cocktailCarousel, {
 		slidesPerView: 'auto',
-		centeredSlides: true,
-		spaceBetween: 25,
+		spaceBetween: 20,
 		navigation: {
-			nextEl: '.slider-panel__next',
-			prevEl: '.slider-panel__prev',
+			nextEl: '.cocktail-slider__next',
+			prevEl: '.cocktail-slider__prev'
+		},
+		pagination: {
+			el: '.cocktail-slider__pagination',
+			type: 'bullets',
+			clickable: true,
 		},
 		breakpoints: {
-			1440: {
+			1280: {
 				slidesPerView: 4,
-				centeredSlides: false,
 			},
 			992: {
 				slidesPerView: 3,
-				centeredSlides: false,
-			},
-			769: {
-				slidesPerView: 2,
-				centeredSlides: false,
-			},
-			577: {
-				centeredSlides: false,
-			},
+			}
 		}
 	});
 }
